@@ -1,0 +1,62 @@
+Title: My First Post
+
+----
+
+Date: 2016-03-22
+
+----
+
+Author: starckio
+
+----
+
+Tags: Test,Comments,Blockquote
+
+----
+
+Text: 
+
+Donec ut lobortis mauris. In pulvinar non urna a sagittis. Vestibulum ipsum velit, tempus ut aliquam ut, porttitor a nulla. Morbi lobortis lorem ipsum, eu lacinia nisi ultrices sed. Fusce quis eleifend sem. In hac habitasse platea dictumst. Vestibulum ac malesuada mauris.
+
+>Pellentesque quis quam ac est efficitur faucibus. Aenean ipsum sem, molestie quis hendrerit id, vehicula non metus. Quisque non hendrerit lacus. Aliquam at fringilla quam.
+
+Sed mollis orci vitae velit venenatis, et ornare massa volutpat. Proin nec turpis massa. Duis congue eu ante a vulputate. Ut posuere, lectus non laoreet ornare, erat purus accumsan est, eget tincidunt enim tellus vel est.
+
+----
+
+Line: 
+
+----
+
+Active-comments: false
+
+----
+
+Comments: 
+
+- 
+  name: Starckio
+  email: starckio@mail.co
+  comment: >
+    Fusce dapibus, tellus ac cursus commodo,
+    tortor mauris condimentum nibh, ut
+    fermentum massa justo sit amet risus.
+    Aenean lacinia bibendum nulla sed
+    consectetur. Aenean eu leo quam.
+    Pellentesque ornare sem lacinia quam
+    venenatis vestibulum. Duis mollis, est
+    non commodo luctus, nisi erat porttitor
+    ligula, eget lacinia odio sem nec elit.
+  date: 2016-03-22
+  time: 03:46
+- 
+  name: Jenna Smith
+  email: jenna@smith.co
+  comment: >
+    Cras justo odio, dapibus ac facilisis
+    in, egestas eget quam. Maecenas faucibus
+    mollis interdum. Integer posuere erat a
+    ante venenatis dapibus posuere velit
+    aliquet.
+  date: 2016-03-22
+  time: 03:46

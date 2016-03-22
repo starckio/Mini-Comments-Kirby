@@ -1,0 +1,496 @@
+/*
+
+Kirby Starterkit
+
+Author: Bastian Allgeier / Sascha Lack
+URL:    http://getkirby.com
+Email:  support@getkirby.com
+
+*/
+
+
+/* Source Sans Pro
+-------------------------------------------------- */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/sourcesanspro-300.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/sourcesanspro-400.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/sourcesanspro-600.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/sourcesanspro-400-italic.woff) format('woff');
+}
+
+
+/* Reset
+-------------------------------------------------- */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+
+/* Pix
+-------------------------------------------------- */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* Links
+-------------------------------------------------- */
+a {
+  color: #000;
+  text-decoration: none;
+  transition: color .3s, background .3s, border .3s;
+}
+a:hover {
+  color: red;
+}
+
+
+/* Clearfix
+-------------------------------------------------- */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Site
+-------------------------------------------------- */
+html {
+  height: 101%;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0 auto;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  padding: 1.5em;
+  max-width: 40em;
+  background: #fff;
+  color: #222;
+}
+
+
+/* Header
+-------------------------------------------------- */
+.header {
+  border-bottom: 2px solid red;
+  margin-bottom: 1.5em;
+}
+.logo {
+  display: block;
+  margin-bottom: 1.5em;
+}
+.logo img {
+  width: 2em;
+}
+
+
+/* Navigation
+-------------------------------------------------- */
+.menu a {
+  display: block;
+  color: #222;
+}
+.menu a:hover {
+  color: red;
+  text-decoration: none;
+}
+.menu .active {
+  color: red;
+}
+.menu li {
+  list-style: none;
+}
+.menu > li {
+  position: relative;
+}
+.menu > li > a {
+  padding: .35em 0;
+  border-top: 1px solid #ddd;
+  font-weight: 600;
+}
+
+.submenu {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  left: 1em;
+}
+.submenu:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: -.5em;
+  left: 0;
+  border-top: .5em solid transparent;
+  border-bottom: .5em solid transparent;
+  border-left: .5em solid #222;
+}
+.submenu li {
+  border-bottom: 1px solid #444;
+}
+.submenu a {
+  padding: .5em 1.5em;
+  font-size: .9em;
+  font-weight: 300;
+  color: #fff;
+  background: #222;
+  white-space: nowrap;
+}
+.submenu a:hover {
+  background: #333;
+  color: #fff;
+}
+
+@media screen and (min-width: 40em) {
+  body {
+    padding: 3em;
+  }
+  .logo {
+    float: left;
+  }
+  .menu {
+    float: right;
+    margin-right: -1em;
+  }
+  .menu > li {
+    float: left;
+  }
+  .menu > li > a {
+    padding: .35em 1em;
+    border: 0;
+  }
+  .menu > li:hover .submenu {
+    display: block;
+  }
+}
+
+
+/* Headings
+-------------------------------------------------- */
+h1 {
+  font-size: 2em;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h2 {
+  font-size: 2em;
+  line-height: 1.25em;
+  font-weight: 300;
+  margin-bottom: .5em;
+  color: red;
+}
+h3 {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h4 {
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: .5em;
+  color: red;
+}
+h1 a, h2 a, h3 a, h4 a {
+  color: inherit;
+  border: 0 !important;
+}
+
+
+
+/* Main
+-------------------------------------------------- */
+.main {
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid red;
+}
+.main hr {
+  margin: 3em 0;
+  height: 2px;
+  background: #ddd;
+}
+.main p,
+.main figure,
+.main ul,
+.main ol {
+  margin-bottom: 1.5em;
+}
+.main a {
+  border-bottom: 2px solid #ddd;
+}
+.main a:hover {
+  border-color: #222;
+}
+
+/* Text blocks */
+.text ul,
+.text ol {
+  margin-left: 1em;
+}
+
+
+/* Blog
+-------------------------------------------------- */
+.blog {
+  padding-bottom: 2em;
+  margin-bottom: 1.5em;
+  border-bottom: 2px solid #ddd;
+}
+.blog:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+@media screen and (min-width: 50em) {
+  
+}
+
+
+/* Article
+-------------------------------------------------- */
+.meta {
+  margin-bottom: 1.5em;
+}
+.meta li {
+  float: left;
+  list-style: none;
+  margin-right: 2em;
+  color: red;
+}
+.meta li b {
+  font-weight: 400;
+  color: #999;
+  padding-right: .25em;
+}
+
+
+/* Comments
+-------------------------------------------------- */
+#comments {
+  border-top: 2px solid #ddd;
+}
+.comment {
+  background: #222;
+  color: #fff;
+  padding: 1.5em;
+  margin-top: 1.5em;
+}
+.comment h3 {
+  margin-bottom: 0;
+}
+.comment time {
+  color: #999;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+.comment p {
+  margin: 0;
+}
+
+
+/* Comments Alerts
+-------------------------------------------------- */
+.success {
+	color: #0EAE03;
+}
+.alert {
+	color: red;
+}
+
+
+/* Comments form
+-------------------------------------------------- */
+.comments_form {
+	margin-top: 2.5em;
+}
+.comments_form.disabled{
+  text-align: center;
+}
+#form {
+  margin-bottom: 1.5em;
+}
+.field {
+  margin-bottom: 1.5em;
+}
+.field label {
+	display: none;
+}
+.field input[type="text"]::-webkit-input-placeholder,
+.field input[type="email"]::-webkit-input-placeholder,
+.field textarea::-webkit-input-placeholder {
+  color: #9ba5a8;
+}
+/* Firefox 19+ */
+.field input[type="text"]::-moz-placeholder,
+.field input[type="email"]::-moz-placeholder,
+.field textarea::-moz-placeholder {
+  color: #9ba5a8;
+}
+.field input[type="text"]:-ms-input-placeholder,
+.field input[type="email"]:-ms-input-placeholder,
+.field textarea:-ms-input-placeholder {
+  color: #9ba5a8;
+}
+/* Firefox 18- */
+.field input[type="text"]:-moz-placeholder,
+.field input[type="email"]:-moz-placeholder,
+.field textarea:-moz-placeholder {
+  color: #9ba5a8;
+}
+.field input[type="text"],
+.field input[type="email"],
+.field textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: transparent;
+	border: 2px solid #9ba5a8;
+	color: #222;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	display: inline-block;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 0;
+	outline: none;
+	padding: .5em .8em;
+	position: relative;
+	width: 100%;
+}
+.field textarea {
+	min-height: 10em;
+	display: block;
+}
+.field input[type="text"]:hover,
+.field input[type="email"]:hover,
+.field textarea:hover {
+	border-color: #222;
+}
+.field input[type="text"]:focus,
+.field input[type="email"]:focus,
+.field textarea:focus {
+	color: #222;
+	background: transparent;
+	border-color: #222;
+}
+/*.uniform__potty {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}*/
+
+@media screen and (min-width: 45em) {
+	.one, .two {
+		float: left;
+		width: 47.5%;
+		margin-right: 5%;
+	}
+	.two {
+		margin-right: 0;
+	}
+}
+
+
+/* Buttons
+-------------------------------------------------- */
+[class*='btn'], a[class*='btn'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	background: transparent;
+	border: 2px solid #9ba5a8;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	color: #9ba5a8;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: .85em;
+	font-weight: 400;
+	line-height: 1.5em;
+	margin: 0;
+	outline: none;
+	padding: .5em .8em;
+	position: relative;
+}
+[class*='btn']::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+[class*='btn']:hover,
+[class*='btn']:focus {
+	border-color: #333333;
+	color: #333333;
+}
+
+
+/* Next/Prev nav
+-------------------------------------------------- */
+.nextprev {
+  padding: 1em 0;
+  border-bottom: 2px solid #ddd;
+}
+.nextprev a {
+  border: 0;
+}
+.nextprev .prev {
+  float: left;
+}
+.nextprev .next {
+  float: right;
+}
+
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  padding: 1em 0 6em;
+  font-size: .8em;
+}
+.copyright {
+  float: left;
+}
+.colophon {
+  float: right;
+}
+.colophon a b {
+  color: red;
+  padding-left: .25em;
+}

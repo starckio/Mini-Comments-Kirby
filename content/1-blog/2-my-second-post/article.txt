@@ -1,0 +1,35 @@
+Title: My Second Post
+
+----
+
+Date: 2016-03-22
+
+----
+
+Author: starckio
+
+----
+
+Tags: Blockquote,Test
+
+----
+
+Text: 
+
+Donec ut lobortis mauris. In pulvinar non urna a sagittis. Vestibulum ipsum velit, tempus ut aliquam ut, porttitor a nulla. Morbi lobortis lorem ipsum, eu lacinia nisi ultrices sed. Fusce quis eleifend sem. In hac habitasse platea dictumst. Vestibulum ac malesuada mauris.
+
+>Pellentesque quis quam ac est efficitur faucibus. Aenean ipsum sem, molestie quis hendrerit id, vehicula non metus. Quisque non hendrerit lacus. Aliquam at fringilla quam.
+
+Sed mollis orci vitae velit venenatis, et ornare massa volutpat. Proin nec turpis massa. Duis congue eu ante a vulputate. Ut posuere, lectus non laoreet ornare, erat purus accumsan est, eget tincidunt enim tellus vel est.
+
+----
+
+Line: 
+
+----
+
+Active-comments: true
+
+----
+
+Comments: 
